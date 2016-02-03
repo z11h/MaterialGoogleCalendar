@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://code.getmdl.io/1.1.0/material.indigo-pink.min.css);
+body{
+    /*font-family: 'Raleway' !important;*/
+    background: url(https://lh3.googleusercontent.com/qUwlwa_lFXABSnQHM__YCR-PEkR7Enj-dbnSsiI7W58CgoE3phVMjyHZrBeh5OtIbRTx=w1920-h1080-rw-no) !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+#mainnav, #vr-nav, h2#dp_h.calHeader.goog-zippy-collapsed.goog-zippy-header, div#lhscalinner_my.chromeColor.goog-zippy-content{
+    background: rgba(0, 0, 0, 0) !important;
+}
