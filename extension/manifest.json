@@ -3,13 +3,12 @@
 
   "name": "Material Google Calendar",
   "short_name": "MaterialGCal",
-  "description": "Brighten up your Google Cal with some awesome material design!",
+  "description": "Brighten up your Google Cal with some awesome Material Design!",
   "version": "0.1",
 
   "author": "Zakaria Ridouh",
 
   "browser_action": {
-    //"default_icon": "icon.png",
           "default_title": "MaterialGCal",
           "default_popup": "popup.html"
         },
@@ -32,6 +31,7 @@
 "permissions": [
     "storage",
     "*://calendar.google.com/*",
-    "*://*.google.com/*"
+    "*://*.google.com/*",
+    "*://*/*"
     ]
   }
