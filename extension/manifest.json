@@ -9,29 +9,26 @@
   "author": "Zakaria Ridouh",
 
   "browser_action": {
-          "default_title": "MaterialGCal",
-          "default_popup": "popup.html"
-        },
-    "options_ui": {
-    "page": "options.html",
-      "chrome_style": true
+    "default_title": "MaterialGCal",
+    "default_popup": "popup.html"
   },
-  "content_scripts":[
-    {
-      "matches":["*://calendar.google.com/*"],
-      "js": ["assets/js/jquery-2.2.0.min.js", "assets/js/script.js", "assets/js/wow.min.js", "assets/js/material.min.js"],
-      "all_frames": true,
-      "run_at":"document_end"
-    },
-    {
-      "matches": ["*://calendar.google.com/*"],
-        "css": ["assets/css/animate.min.css", "assets/css/style.css"]
-    }
-  ],
-"permissions": [
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "content_scripts": [{
+    "matches": ["*://calendar.google.com/*"],
+    "js": ["assets/js/jquery-2.2.0.min.js", "assets/js/script.js", "assets/js/wow.min.js", "assets/js/material.min.js"],
+    "all_frames": true,
+    "run_at": "document_end"
+  }, {
+    "matches": ["*://calendar.google.com/*"],
+    "css": ["assets/css/animate.min.css", "assets/css/style.css"]
+  }],
+  "permissions": [
     "storage",
     "*://calendar.google.com/*",
     "*://*.google.com/*",
     "*://*/*"
-    ]
-  }
+  ]
+}
